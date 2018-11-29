@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Nov 29 18:05:29 CST 2018
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=BcSDK.jar
+manifest.mergeall=true
+manifest.mainclass=org.fc.bc.sdk.test.Test
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
