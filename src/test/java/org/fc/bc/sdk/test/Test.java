@@ -72,13 +72,13 @@ public class Test {
 		System.out.println("keyStoreContent="+keyStoreContent);
 		System.out.println();
 
-		System.out.println("###### 生成转账交易签名，服务器端 ETH转账 接口所需要的签名后字符串参数 ######");
+		System.out.println("###### 生成转账交易签名，服务器端 BC转账 接口所需要的签名后字符串参数 ######");
 		BigInteger fromAddressNonce = new BigInteger("0");//Nonce通过接口获取from地址最新的Nonce值
 		BigInteger amonut = BigInteger.valueOf(1000000000000000000L);//
 		String to  =  "0x5D999604F7F16076199728a62698ad453a4A9965";//接收方地址
 		//生成CWV转账签名字符串
-		String signedMessage_ETH = BcSDK.genSignedMessage(fromAddressNonce, from, to, amonut);
-		System.out.println("CWV转账SignedMessage="+signedMessage_ETH);
+		String signedMessage_BC = BcSDK.genSignedMessage(fromAddressNonce, from, to, amonut);
+		System.out.println("CWV转账SignedMessage="+signedMessage_BC);
 		System.out.println();
 		
 		System.out.println("###### 生成转账交易签名，服务器端 Token转账 接口所需要的签名后字符串参数 ######");
@@ -92,7 +92,7 @@ public class Test {
 		System.out.println();
 		
 		// TODO
-//		System.out.println("调用服务器的转账接口（发送到到链上） 将signedMessage作为ETH转账接口或者转账接口的参数");
+//		System.out.println("调用服务器的转账接口（发送到到链上） 将signedMessage作为BC转账接口或者转账接口的参数");
 		
 		System.out.println();
 		System.out.println();
