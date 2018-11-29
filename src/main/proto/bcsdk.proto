@@ -1,0 +1,34 @@
+syntax = "proto3";
+package org.fc.sdk.pbgens;
+
+
+message MultiTransactionBody {
+	repeated MultiTransactionInput inputs = 1;
+	repeated MultiTransactionOutput outputs = 2;
+	bytes exdata = 3;
+	repeated MultiTransactionSignature signatures = 4;
+	repeated bytes delegate = 5;
+	bytes data = 6;
+	int64 timestamp = 7;
+	int32 type = 8;
+}
+
+message MultiTransactionInput {
+	int32 nonce = 1;
+	bytes address = 4;
+	bytes amount= 5;
+	string token = 7;
+	string symbol = 8;
+	bytes cryptoToken = 9;
+}
+
+message MultiTransactionOutput {
+	bytes address= 1;
+	bytes amount= 2;
+	string symbol = 3;
+	bytes cryptoToken = 4;
+}
+
+message MultiTransactionSignature {
+	bytes signature = 1;
+}
