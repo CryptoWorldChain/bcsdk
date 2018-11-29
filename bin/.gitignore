@@ -1,4 +1,10 @@
-/.DS_Store
 /bcsdk.proto
+/chinese_traditional.txt
+/english.txt
+/french.txt
+/italian.txt
+/japanese.txt
+/korean.txt
 /org/
 /pbgens/
+/spanish.txt

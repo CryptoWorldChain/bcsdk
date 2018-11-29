@@ -124,7 +124,8 @@ public class Test {
 		
 		try {
 			System.out.println("###### 读取账户 ######");
-			String keyStoreFilePath = keyStorePath + keyStoreFileName;
+//			String keyStoreFilePath = keyStorePath + keyStoreFileName;
+			String keyStoreFilePath = keyStoreFileName;
 			System.out.println("创建KeyStore路径及文件名="+keyStoreFilePath);
 			// 读取已有账户信息（读取keyStore文件）
 			from = BcSDK.readKeyStoreFile(password, keyStoreFilePath);
@@ -139,7 +140,8 @@ public class Test {
 					, password
 					, new File(keyStorePath)
 					, null);
-			keyStoreFilePath = keyStorePath + keyStoreFileName;
+//			keyStoreFilePath = keyStorePath + keyStoreFileName;
+			keyStoreFilePath = keyStoreFileName;
 			System.out.println("keyStore路径及文件名="+keyStoreFilePath);
 			System.out.println();
 			
